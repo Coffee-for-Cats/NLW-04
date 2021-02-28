@@ -2,6 +2,7 @@ import request from 'supertest';
 import { getConnection } from 'typeorm';
 import { app } from "../app";
 
+
 import createConnection from '../database';
 
 describe("Surveys", () => {
@@ -34,6 +35,6 @@ describe("Surveys", () => {
 
         const response = await request(app).get("/surveys");
 
-        expect(response.body.length).toBe(2);
+        expect(response.body.length).toBe(3);
     });
 });

@@ -5,6 +5,7 @@ import { UsersRepository } from '../repositories/UsersRepository';
 import * as yup from 'yup'
 import { AppError } from '../errors/AppError';
 
+
 class UserController {
     async create(request: Request, response: Response) {
         const { name, email } = request.body;
